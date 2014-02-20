@@ -1,0 +1,126 @@
+<!doctype html> 
+<!--
+File Name: m.PersonalPortfolioWebsite.html
+Author Name: Jonathan Hodder
+Website Name: Personal Portfolio Website Mobile
+-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Portfolio Home</title>
+	<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script> 
+	<link rel="stylesheet" href="css/mobileCustom.css" />
+	<link rel="stylesheet" href="css/foundation.css" /> 
+	<script src="js/modernizr.js"></script>  
+  </head>
+<body>
+<!--
+Page Name: Home
+Page Description: Provides user with basic information about Jonathan Hodder's Portfolio and useful links on a mobile.--> 
+<div data-role="page" id="home">
+	<div data-role="header">
+		<!-- Company Logo-->
+		<img src="img/Bug.png" alt="Company Logo" id="imageCompanyLogo" height="300px" width = "300px"/>	
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-icon="home" class="ui-btn-active" data-theme="b">Home</a></li>
+				<li><a href="#aboutMe" data-icon="star" data-theme="b">About Me</a></li>
+		    	<li><a href="#contactMe" data-icon="grid" data-theme="b">Contact Me</a></li>
+	    	</ul>
+		</div>
+	</div>
+	<div data-role="content">	
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
+				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
+	    	</ul>
+		</div>	
+		<!-- Featured Work Orbit Slider -->
+		<div class="callout panel">
+			<ul class="featuredWorkOrbit" data-orbit>
+				<li>
+			   		<a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" style="width:300px;height:300px;" id="FalloutSurvival"></a>
+	      			<div class="orbit-caption">
+	        			Fallout Survival Project.
+	     			</div>
+			  	</li>
+			  	<li>
+			    	<a href="https://github.com/BlaseNEMESIS/Quidditch_ProjectB"><img src="img/quidditch.jpg" alt="Quidditch Project" style="width:300px;height:300px;" id="QuidditchProject"></a>
+	      			<div class="orbit-caption">
+	        			Quidditch Project.
+			   	 	</div>
+			  	</li>
+			  	<li>
+	      			<a href="https://github.com/BlaseNEMESIS/Assignment_4_Balloon_Man"><img src="img/balloonMan.jpg" alt="Balloon Man" style="width:300px;height:300px;" id="BalloonMan"></a>
+	      			<div class="orbit-caption">
+	        			Balloon Man Project.
+			    	</div>
+			  	</li>
+			</ul>	
+		</div>
+	</div>
+	<div data-role="footer">
+		<h4>Copyright 2013</h4>
+		<h4><a href="index.html">Full Site</a></h4>
+	</div>
+</div> 
+
+<div data-role="page" id="aboutMe">
+	<div data-role="header">
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="contactMe">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="projects">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="services">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+ 
+<script src="js/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
