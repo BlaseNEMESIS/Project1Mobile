@@ -24,7 +24,7 @@ Page Description: Provides user with basic information about Jonathan Hodder's P
 <div data-role="page" id="home">
 	<div data-role="header">
 		<!-- Company Logo-->
-		<img src="img/Bug.png" alt="Company Logo" id="imageCompanyLogo" height="300px" width = "300px"/>	
+		<img src="img/Bug.png" alt="Company Logo" id="imageCompanyLogo" style="width:200px;height:200px;"/>	
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#home" data-icon="home" class="ui-btn-active" data-theme="b">Home</a></li>
@@ -75,7 +75,7 @@ File Description: Provides user with information about Jonathan Hodder on a Mobi
 -->
 <div data-role="page" id="aboutMe">
 	<div data-role="header">
-		<h1>We take your bugs and remove them from your life.</h1>
+		<h1>About Me</h1>
 		<div data-role="navbar">
 			<ul>
 				<li><a href="javascript:history.go(-1)" data-icon="back" data-theme="b">Back</a></li>
@@ -92,26 +92,33 @@ File Description: Provides user with information about Jonathan Hodder on a Mobi
 				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
 		</div>
-		<!-- Mission Statement -->	
-		<h3>Mission Statement</h3>
-		<p>All Your Bugs is a group of contractors that helps businesses big or small with their development and management of technology projects.
-		We provide companies with on-call workers who can help businesses with Web Design and Development of Web Pages, Applications and Programs.
-		Throughout the creation of your product our employees offer their experience with Performance Testing and Functionality Testing.
-		Our company also provides employees who can be contractually hired to work with your team on Project Management throughout your 		projects.</p>
-			
+		<h2>We take your bugs and remove them from your life.</h2>	
+		<!-- Mission Statement -->
+		<div data-role="collapsible">
+			<h3>Mission Statement</h3>
+			<p>All Your Bugs is a group of contractors that helps businesses big or small with their development and management of technology projects.
+			We provide companies with on-call workers who can help businesses with Web Design and Development of Web Pages, Applications and Programs.
+			Throughout the creation of your product our employees offer their experience with Performance Testing and Functionality Testing.
+			Our company also provides employees who can be contractually hired to work with your team on Project Management throughout your 		projects.</p>
+		</div>	
 		<!-- Profile Information -->
-		<div class="ui-grid-a">
+		<div class="ui-grid-a">		
       		<div class="ui-block-a">
-				<p>Name: Jonathan Hodder</p>
-				<p>Age: 20</p>
-				<p>Gender: Male</p>
-				<p>Profession: Computer Programmer Analyst</p>
-				<p>Hobbies: Video Games, Reading and Rowing</p>
+      			<div data-role="collapsible">
+      				<h3>Profile</h3>
+					<p>Name: Jonathan Hodder</p>
+					<p>Age: 20</p>
+					<p>Gender: Male</p>
+					<p>Profession: Computer Programmer Analyst</p>
+					<p>Hobbies: Video Games, Reading and Rowing</p>
+				</div>
 			</div>	
 		<!-- Profile Picture -->
 			<div class="ui-block-b">
-				<p>Profile Picture:</p>
-				<img src="img/profilePicture.png" alt="Profile Picture" style="width:200px;height:200px;" id="ProfilePicture">
+				<div data-role="collapsible">
+					<h3>Picture</h3>
+					<img src="img/profilePicture.png" alt="Profile Picture" style="width:200px;height:200px;" id="ProfilePicture">
+				</div>
 			</div>
 		</div>
 		<!-- Resume -->
@@ -203,20 +210,14 @@ File Description: Provides user with contact information to contact Jonathan Hod
 				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
 				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
-		</div>
-				<div data-role="navbar">
-			<ul>
-				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
-	    	</ul>
-		</div>		
+		</div>	
 	</div>
 	<div data-role="footer">
 		<h4>Copyright 2013</h4>
 	</div>
 </div>
 <!--
-File Name: Projects Mobile
+File Page: Projects Mobile
 File Description: Provides user with links to websites created by Jonathan Hodder for Mobile View
 -->
 <div data-role="page" id="projects">
@@ -238,8 +239,22 @@ File Description: Provides user with links to websites created by Jonathan Hodde
 				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
 		</div>	
-		<div data-role="navbar">
-
+		<div class="ui-grid-b">
+      		<div class="ui-block-a">
+				<h5>Fallout Survival</h5>
+				<a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" 
+				style="width:250px;height:200px;"></a>
+			</div>
+			<div class="ui-block-b">
+				<h5>Quidditch Project</h5>
+				<a href="https://github.com/BlaseNEMESIS/Quidditch_ProjectB"><img src="img/quidditch.jpg" alt="Quidditch Project" 
+				style="width:250px;height:200px;"></a>
+			</div>
+			<div class="ui-block-c">
+				<h5>Balloon Man Game</h5>
+				<a href="https://github.com/BlaseNEMESIS/Assignment_4_Balloon_Man"><img src="img/balloonMan.jpg" alt="Balloon Man" 
+				style="width:250px;height:200px;"></a>
+			</div>
 		</div>			
 	</div>
 	<div data-role="footer">
@@ -247,7 +262,7 @@ File Description: Provides user with links to websites created by Jonathan Hodde
 	</div>
 </div>
 <!--
-File Name: Services Mobile
+File Page: Services Mobile
 File Description: Provides user with the services that All Your Bugs can provide for Mobile View
 -->
 <div data-role="page" id="services">
@@ -269,6 +284,64 @@ File Description: Provides user with the services that All Your Bugs can provide
 				<li><a href="#services" data-theme="b" class="ui-btn-active"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
 		</div>	
+		<!-- Testing Service -->
+		<div data-role="collapsible">
+			<h4>Testing</h4>
+			<div class="ui-grid-a">		
+				<div class="ui-block-a">	
+					<p>Software testing is an investigation provided by All Your Bugs of your product and services that can be used to 
+					provide status updates to Stakeholders. Software testing can also provide an objective, independent view of the software to allow the 
+					business to appreciate and understand the risks of software implementation.  It can also be used to determine where defects and bugs
+					in the software tested.</p>
+				</div>	
+				<div class="ui-block-b">
+					<img src="img/testing.jpg" alt="Testing" style="width:300px;height:207px;" id="testingPicture">
+				</div>
+			</div>
+		</div>
+		<!-- Web Design Service -->
+		<div data-role="collapsible">
+			<h4>Web Design</h4>	
+			<div class="ui-grid-a">		
+				<div class="ui-block-a">		
+	 				<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of 
+	 				web design provided by All Your Bugs include web graphic design; interface design; authoring, including standardised 
+	 				code and proprietary software; user experience design; and search engine optimization.</p>
+				</div>	
+				<div class="ui-block-b">
+					<img src="img/webDesign.jpg" alt="Web Design" style="width:300px;height:207px;" id="webDesignPicture">
+				</div>
+			</div>
+		</div>
+		<!-- Development Service -->
+		<div data-role="collapsible">
+			<h4>Development</h4> 
+			<div class="ui-grid-a">		
+				<div class="ui-block-a">								
+				<p>All Your Bugs  provides Software development. Our group can write and maintain the source code, and involve
+				ourselves in the conception of the desired software through to the final manifestation of the software, in a planned and structured 
+				process.  Our group can supply our expertise in include research, new development, prototyping, modification, reuse, re-engineering, and
+				maintenance.</p>
+				</div>	
+				<div class="ui-block-b">
+					<img src="img/development.png" alt="Development" style="width:300px;height:207px;" id="devlopmentPicture">
+				</div>
+			</div>
+		</div>	
+		<!-- Project Management Service -->
+		<div data-role="collapsible">
+			<h4>Project Management</h4>	
+			<div class="ui-grid-a">		
+				<div class="ui-block-a">						
+	 				<p>Project management provided All Your Bugs is the process and activity of planning, organizing, motivating, and 
+	 				controlling resources to achieve specific goals. Our group can assist your company with achieving all of your project goals and 
+	 				objectives while honoring your preconceived constraints.</p> 
+				</div>	
+				<div class="ui-block-b">
+					<img src="img/projectManagement.png" alt="Project Management" style="width:300px;height:207px;" id="projectManagementPicture">
+				</div>
+			</div>
+		</div>							
 	</div>
 	<div data-role="footer">
 		<h4>Copyright 2013</h4>
