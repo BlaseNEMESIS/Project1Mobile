@@ -2,7 +2,7 @@
 <!--
 File Name: m.PersonalPortfolioWebsite.html
 Author Name: Jonathan Hodder
-Website Name: Personal Portfolio Website Mobile
+Website Name: Personal Portfolio Website Mobile Look up 
 -->
 <html class="no-js" lang="en">
   <head>
@@ -12,9 +12,13 @@ Website Name: Personal Portfolio Website Mobile
 	<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script> 
-	<link rel="stylesheet" href="css/foundation.css" /> 
 	<link rel="stylesheet" href="css/mobileCustom.css" />
-	<script src="js/modernizr.js"></script>  
+	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" />
+	<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+  	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
   </head>
 <body>
 <!--
@@ -26,8 +30,9 @@ Page Description: Provides user with basic information about Jonathan Hodder's P
 		<!-- Company Logo-->
 		<img src="img/Bug.png" alt="Company Logo" id="imageCompanyLogo" style="width:200px;height:200px;"/>	
 		<div data-role="navbar">
+		<!-- Nav Menu -->
 			<ul>
-				<li><a href="#home" data-icon="home" class="ui-btn-active" data-theme="b">Home</a></li>
+				<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist" data-theme="b">Home</a></li>
 				<li><a href="#aboutMe" data-icon="star" data-theme="b">About Me</a></li>
 		    	<li><a href="#contactMe" data-icon="grid" data-theme="b">Contact Me</a></li>
 	    	</ul>
@@ -36,35 +41,23 @@ Page Description: Provides user with basic information about Jonathan Hodder's P
 	<div data-role="content">	
 		<div data-role="navbar">
 			<ul>
+				<!-- Nav Menu Image Links -->
 				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
 				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
 		</div>	
-		<!-- Featured Work Orbit Slider -->
-		<div class="callout panel">
-			<ul class="featuredWorkOrbit" data-orbit>
-				<li>
-			   		<a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" style="width:300px;height:300px;" id="FalloutSurvival"></a>
-	      			<div class="orbit-caption">
-	        			Fallout Survival Project.
-	     			</div>
-			  	</li>
-			  	<li>
-			    	<a href="https://github.com/BlaseNEMESIS/Quidditch_ProjectB"><img src="img/quidditch.jpg" alt="Quidditch Project" style="width:300px;height:300px;" id="QuidditchProject"></a>
-	      			<div class="orbit-caption">
-	        			Quidditch Project.
-			   	 	</div>
-			  	</li>
-			  	<li>
-	      			<a href="https://github.com/BlaseNEMESIS/Assignment_4_Balloon_Man"><img src="img/balloonMan.jpg" alt="Balloon Man" style="width:300px;height:300px;" id="BalloonMan"></a>
-	      			<div class="orbit-caption">
-	        			Balloon Man Project.
-			    	</div>
-			  	</li>
-			</ul>	
+		<!-- Featured Work Nivo Slider -->
+		<div class="slider-wrapper theme-default">
+    		<div class="ribbon"></div>
+			<div id="slider" class="nivoSlider">
+			    <a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" id="FalloutSurvival" title="Fallout Survival Project."></a>
+			    <a href="https://github.com/BlaseNEMESIS/Quidditch_ProjectB"><img src="img/quidditch.jpg" alt="Quidditch Project" id="QuidditchProject" title="Quidditch Project."></a>
+			    <a href="https://github.com/BlaseNEMESIS/Assignment_4_Balloon_Man"><img src="img/balloonMan.jpg" alt="Balloon Man" id="BalloonMan" title="Balloon Man Project."></a>
+			</div>
 		</div>
 	</div>
 	<div data-role="footer">
+		<!--footer and Desktop site link-->
 		<h4>Copyright 2013</h4>
 		<h4><a href="index.html">Full Site</a></h4>
 	</div>
@@ -76,16 +69,18 @@ File Description: Provides user with information about Jonathan Hodder on a Mobi
 <div data-role="page" id="aboutMe">
 	<div data-role="header">
 		<h1>About Me</h1>
+		<!-- Nav Menu -->
 		<div data-role="navbar">
 			<ul>
 				<li><a href="javascript:history.go(-1)" data-icon="back" data-theme="b">Back</a></li>
 				<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
-				<li><a href="#aboutMe" data-icon="star" class="ui-btn-active" data-theme="b">About Me</a></li>
+				<li><a href="#aboutMe" data-icon="star" class="ui-btn-active ui-state-persist" data-theme="b">About Me</a></li>
 		    	<li><a href="#contactMe" data-icon="grid" data-theme="b">Contact Me</a></li>
 	    	</ul>
 		</div>
 	</div>
 	<div data-role="content">	
+		<!-- Nav Menu Image Links-->
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
@@ -185,6 +180,7 @@ File Description: Provides user with information about Jonathan Hodder on a Mobi
 		</div>					
 	</div>
 	<div data-role="footer">
+		<!-- Footer -->
 		<h4>Copyright 2013</h4>
 	</div>
 </div>
@@ -197,22 +193,50 @@ File Description: Provides user with contact information to contact Jonathan Hod
 		<h1>Contact Me</h1>
 		<div data-role="navbar">
 			<ul>
+				<!-- Nav Menu -->
 				<li><a href="javascript:history.go(-1)" data-icon="back" data-theme="b">Back</a></li>
 				<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
 				<li><a href="#aboutMe" data-icon="star" data-theme="b">About Me</a></li>
-		    	<li><a href="#contactMe" data-icon="grid" class="ui-btn-active" data-theme="b">Contact Me</a></li>
+		    	<li><a href="#contactMe" data-icon="grid" class="ui-btn-active ui-state-persist" data-theme="b">Contact Me</a></li>
 	    	</ul>
 		</div>
 	</div>
 	<div data-role="content">	
 		<div data-role="navbar">
 			<ul>
+				<!-- Nav Menu Image Link-->
 				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
 				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
-		</div>	
+		</div>
+		<!-- Contact Information -->
+		<div class="ui-grid-a">		
+      		<div class="ui-block-a">
+				<div data-role="collapsible">
+					<!--Contact Information-->
+		      		<h3>Contact Info</h3>
+					<p>Email: jonmhodder@yahoo.com</p>
+					<p>Home Phone: <a href="tel:+17053003515">705-300-3515</a></p>
+					<p>Work Offices: 1st Georgian Drive, 17 Carley Cres.</p>
+					<p>Cell Phone: N/A</p>	
+				</div>
+			</div>
+			<div class="ui-block-b">
+				<div data-role="collapsible">
+					<h3>Keep Connected...</h3>
+					<div data-role="navbar">
+	         			<ul>	
+	         				<!--Keep Connected Links-->	
+	         				<li><a href="https://www.facebook.com/jonathan.hodder.507" data-theme="b"><img src="img/facebook.png" style="width:50px;height:50px;" alt="Facebook Link" /></a></li>
+	        				<li><a href="https://www.youtube.com/blaseNEMESIS" data-theme="b"><img src="img/youtube_icon.png" style="width:50px;height:50px;" alt="Youtube Link" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div data-role="footer">
+		<!-- Footer -->
 		<h4>Copyright 2013</h4>
 	</div>
 </div>
@@ -224,6 +248,7 @@ File Description: Provides user with links to websites created by Jonathan Hodde
 	<div data-role="header">
 		<h1>Projects</h1>
 		<div data-role="navbar">
+			<!-- Nav Menu-->
 			<ul>
 				<li><a href="javascript:history.go(-1)" data-icon="back" data-theme="b">Back</a></li>
 				<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
@@ -235,11 +260,13 @@ File Description: Provides user with links to websites created by Jonathan Hodde
 	<div data-role="content">	
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#projects" data-theme="b" class="ui-btn-active"><img src="img/projectsLink.png" alt="Projects"/></a></li>
+				<!-- Nav Menu Image links -->
+				<li><a href="#projects" data-theme="b" class="ui-btn-active ui-state-persist"><img src="img/projectsLink.png" alt="Projects"/></a></li>
 				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
 		</div>	
 		<div class="ui-grid-b">
+			<!-- Project Image Links -->
       		<div class="ui-block-a">
 				<h5>Fallout Survival</h5>
 				<a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" 
@@ -258,6 +285,7 @@ File Description: Provides user with links to websites created by Jonathan Hodde
 		</div>			
 	</div>
 	<div data-role="footer">
+		<!-- Footer -->
 		<h4>Copyright 2013</h4>
 	</div>
 </div>
@@ -270,6 +298,7 @@ File Description: Provides user with the services that All Your Bugs can provide
 		<h1>Services</h1>
 		<div data-role="navbar">
 			<ul>
+				<!-- Nav Menu -->
 				<li><a href="javascript:history.go(-1)" data-icon="back" data-theme="b">Back</a></li>
 				<li><a href="#home" data-icon="home" data-theme="b">Home</a></li>
 				<li><a href="#aboutMe" data-icon="star" data-theme="b">About Me</a></li>
@@ -280,8 +309,9 @@ File Description: Provides user with the services that All Your Bugs can provide
 	<div data-role="content">	
 		<div data-role="navbar">
 			<ul>
+				<!-- Nav Menu Image Links -->
 				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b" class="ui-btn-active"><img src="img/servicesLink.png" alt="Services"/></a></li>
+				<li><a href="#services" data-theme="b" class="ui-btn-active ui-state-persist"><img src="img/servicesLink.png" alt="Services"/></a></li>
 	    	</ul>
 		</div>	
 		<!-- Testing Service -->
@@ -344,13 +374,14 @@ File Description: Provides user with the services that All Your Bugs can provide
 		</div>							
 	</div>
 	<div data-role="footer">
+		<!-- Footer -->
 		<h4>Copyright 2013</h4>
 	</div>
 </div>
-<script src="js/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
-<script>
-	$(document).foundation();
+<script type="text/javascript">
+$(window).load(function() {
+	$('#slider').nivoSlider();
+});
 </script>
 </body>
 </html>
