@@ -12,7 +12,7 @@ Website Name: Personal Portfolio Website Mobile Look up
 	<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script> 
-	<link rel="stylesheet" href="css/mobileCustom.css" />
+	<link rel="stylesheet" href="css/mobileCustom.css" media="screen and (min-device-width: 320px) and (max-device-width: 480px)"/>
 	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 	<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
@@ -28,7 +28,7 @@ Page Description: Provides user with basic information about Jonathan Hodder's P
 <div data-role="page" id="home">
 	<div data-role="header">
 		<!-- Company Logo-->
-		<img src="img/Bug.png" alt="Company Logo" id="imageCompanyLogo" style="width:200px;height:200px;"/>	
+		<img src="img/Bug.png" alt="Company Logo" id="imageCompanyLogo" style="width:33%;height:200px;"/>	
 		<div data-role="navbar">
 		<!-- Nav Menu -->
 			<ul>
@@ -42,8 +42,8 @@ Page Description: Provides user with basic information about Jonathan Hodder's P
 		<div data-role="navbar">
 			<ul>
 				<!-- Nav Menu Image Links -->
-				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
+				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" style="width:50%;" alt="Projects"/></a></li>
+				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" style="width:50%;"alt="Services"/></a></li>
 	    	</ul>
 		</div>	
 		<!-- Featured Work Nivo Slider -->
@@ -83,8 +83,8 @@ File Description: Provides user with information about Jonathan Hodder on a Mobi
 		<!-- Nav Menu Image Links-->
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
+				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" style="width:50%;" alt="Projects"/></a></li>
+				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" style="width:50%;" alt="Services"/></a></li>
 	    	</ul>
 		</div>
 		<h2>We take your bugs and remove them from your life.</h2>	
@@ -112,7 +112,7 @@ File Description: Provides user with information about Jonathan Hodder on a Mobi
 			<div class="ui-block-b">
 				<div data-role="collapsible">
 					<h3>Picture</h3>
-					<img src="img/profilePicture.png" alt="Profile Picture" style="width:200px;height:200px;" id="ProfilePicture">
+					<img src="img/profilePicture.png" alt="Profile Picture" style="width:80%;height:250px;" id="ProfilePicture">
 				</div>
 			</div>
 		</div>
@@ -205,8 +205,8 @@ File Description: Provides user with contact information to contact Jonathan Hod
 		<div data-role="navbar">
 			<ul>
 				<!-- Nav Menu Image Link-->
-				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
+				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" style="width:50%;" alt="Projects"/></a></li>
+				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" style="width:50%;" alt="Services"/></a></li>
 	    	</ul>
 		</div>
 		<!-- Contact Information -->
@@ -215,10 +215,10 @@ File Description: Provides user with contact information to contact Jonathan Hod
 				<div data-role="collapsible">
 					<!--Contact Information-->
 		      		<h3>Contact Info</h3>
-					<p>Email: jonmhodder@yahoo.com</p>
 					<p>Home Phone: <a href="tel:+17053003515">705-300-3515</a></p>
 					<p>Work Offices: 1st Georgian Drive, 17 Carley Cres.</p>
-					<p>Cell Phone: N/A</p>	
+					<p>Cell Phone: N/A</p>
+					<p>Email: jonmhodder@yahoo.com</p>	
 				</div>
 			</div>
 			<div class="ui-block-b">
@@ -261,26 +261,23 @@ File Description: Provides user with links to websites created by Jonathan Hodde
 		<div data-role="navbar">
 			<ul>
 				<!-- Nav Menu Image links -->
-				<li><a href="#projects" data-theme="b" class="ui-btn-active ui-state-persist"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" alt="Services"/></a></li>
+				<li><a href="#projects" data-theme="b" class="ui-btn-active ui-state-persist"><img src="img/projectsLink.png" style="width:50%;" alt="Projects"/></a></li>
+				<li><a href="#services" data-theme="b"><img src="img/servicesLink.png" style="width:50%;" alt="Services"/></a></li>
 	    	</ul>
 		</div>	
 		<div class="ui-grid-b">
 			<!-- Project Image Links -->
       		<div class="ui-block-a">
-				<h5>Fallout Survival</h5>
-				<a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" 
-				style="width:250px;height:200px;"></a>
+				<h5>Fallout _Survival</h5>
+				<a href="https://github.com/BlaseNEMESIS/Assignment1-Fallout_Survival"><img src="img/fallout.jpg" alt="Fallout Survival" style="width:80%;height:200px;"></a>
 			</div>
 			<div class="ui-block-b">
 				<h5>Quidditch Project</h5>
-				<a href="https://github.com/BlaseNEMESIS/Quidditch_ProjectB"><img src="img/quidditch.jpg" alt="Quidditch Project" 
-				style="width:250px;height:200px;"></a>
+				<a href="https://github.com/BlaseNEMESIS/Quidditch_ProjectB"><img src="img/quidditch.jpg" alt="Quidditch Project" style="width:80%;height:200px;"></a>
 			</div>
 			<div class="ui-block-c">
-				<h5>Balloon Man Game</h5>
-				<a href="https://github.com/BlaseNEMESIS/Assignment_4_Balloon_Man"><img src="img/balloonMan.jpg" alt="Balloon Man" 
-				style="width:250px;height:200px;"></a>
+				<h5>Balloon ManGame</h5>
+				<a href="https://github.com/BlaseNEMESIS/Assignment_4_Balloon_Man"><img src="img/balloonMan.jpg" alt="Balloon Man" style="width:80%;height:200px;"></a>
 			</div>
 		</div>			
 	</div>
@@ -310,8 +307,8 @@ File Description: Provides user with the services that All Your Bugs can provide
 		<div data-role="navbar">
 			<ul>
 				<!-- Nav Menu Image Links -->
-				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects"/></a></li>
-				<li><a href="#services" data-theme="b" class="ui-btn-active ui-state-persist"><img src="img/servicesLink.png" alt="Services"/></a></li>
+				<li><a href="#projects" data-theme="b"><img src="img/projectsLink.png" alt="Projects" style="width:50%;"/></a></li>
+				<li><a href="#services" data-theme="b" class="ui-btn-active ui-state-persist"><img src="img/servicesLink.png" alt="Services" style="width:50%;"/></a></li>
 	    	</ul>
 		</div>	
 		<!-- Testing Service -->
@@ -325,7 +322,7 @@ File Description: Provides user with the services that All Your Bugs can provide
 					in the software tested.</p>
 				</div>	
 				<div class="ui-block-b">
-					<img src="img/testing.jpg" alt="Testing" style="width:300px;height:207px;" id="testingPicture">
+					<img src="img/testing.jpg" alt="Testing" style="width:80%;height:207px;" id="testingPicture" >
 				</div>
 			</div>
 		</div>
@@ -339,7 +336,7 @@ File Description: Provides user with the services that All Your Bugs can provide
 	 				code and proprietary software; user experience design; and search engine optimization.</p>
 				</div>	
 				<div class="ui-block-b">
-					<img src="img/webDesign.jpg" alt="Web Design" style="width:300px;height:207px;" id="webDesignPicture">
+					<img src="img/webDesign.jpg" alt="Web Design" style="width:80%;height:207px;" id="webDesignPicture">
 				</div>
 			</div>
 		</div>
@@ -354,7 +351,7 @@ File Description: Provides user with the services that All Your Bugs can provide
 				maintenance.</p>
 				</div>	
 				<div class="ui-block-b">
-					<img src="img/development.png" alt="Development" style="width:300px;height:207px;" id="devlopmentPicture">
+					<img src="img/development.png" alt="Development" style="width:80%;height:207px;" id="devlopmentPicture">
 				</div>
 			</div>
 		</div>	
@@ -368,7 +365,7 @@ File Description: Provides user with the services that All Your Bugs can provide
 	 				objectives while honoring your preconceived constraints.</p> 
 				</div>	
 				<div class="ui-block-b">
-					<img src="img/projectManagement.png" alt="Project Management" style="width:300px;height:207px;" id="projectManagementPicture">
+					<img src="img/projectManagement.png" alt="Project Management" style="width:80%;height:207px;" id="projectManagementPicture">
 				</div>
 			</div>
 		</div>							
